@@ -1,5 +1,6 @@
 # terraform_azure_vnet
 
+```
 resource "azurerm_virtual_network" "wordpress" {
   name                = "wordpress-vnet"
   address_space       = ["10.0.0.0/16"]
@@ -22,3 +23,4 @@ resource "azurerm_public_ip" "wordpress" {
   domain_name_label   = random_string.fqdn.result
   
 }
+```
